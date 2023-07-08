@@ -1,0 +1,26 @@
+.input {
+    border-radius: 8px;
+    border: 1px solid rgba(137, 137, 137, 0.30);
+    background: #F7F7F7;
+    display: block;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    padding: 12px 22px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

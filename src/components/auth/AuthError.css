@@ -1,0 +1,29 @@
+.error-container {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+}
+
+.error-container-hover {
+    height: 80px;
+}
+
+.error {
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #C572EC 0%, #FF0909 100%);
+    border-radius: 10px;
+
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-button {
+    font-size: 26px;
+
+    user-select: none;
+    cursor: pointer;
+}

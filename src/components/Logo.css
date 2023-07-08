@@ -1,0 +1,11 @@
+.logo-container {
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+}

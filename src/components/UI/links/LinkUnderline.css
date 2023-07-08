@@ -1,0 +1,35 @@
+.link {
+    text-decoration:none;
+    display: inline-block;
+    line-height: 1;
+    color: #7F6BFF;
+    cursor: pointer;
+    transition: color 0.24s ease-in-out;
+
+    user-select: none;
+}
+
+.link:hover {
+    color: #6751f5;
+}
+
+.link:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #7F6BFF;
+    transition: width 0.24s ease-in-out, color 0.24s ease-in-out ;
+    border-radius: 45px;
+}
+
+.link:hover:after,
+.link:focus:after {
+    width: 100%;
+    color: #644df8;
+}
+
+.link a {
+    text-decoration: none;
+    color: #7F6BFF;
+}

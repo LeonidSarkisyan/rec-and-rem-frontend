@@ -1,0 +1,26 @@
+.button {
+    border-radius: 8px;
+    background: #7764ff;
+
+    cursor: pointer;
+    user-select: none;
+
+    display: inline-block;
+    padding: 13px 27px;
+
+    color: #F3F3F3;
+    text-align: center;
+
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-variant: all-small-caps;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    transition: background-color 0.15s ease-out;
+}
+
+.button:hover {
+    background: #5d4aff;
+}
