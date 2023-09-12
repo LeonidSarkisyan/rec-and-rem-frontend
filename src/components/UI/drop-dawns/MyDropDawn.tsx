@@ -13,6 +13,12 @@ const MyDropDawn: FC<MyDropDawnProps> = ({children, isOpen}) => {
     const [heightChildren, setHeightChildren] = useState<number | undefined>(0)
 
     useEffect(() => {
+        if (isOpen) {
+            setHeight(heightChildren)
+        }
+    })
+
+    useEffect(() => {
         setHeightChildren(childrenRef.current?.scrollHeight)
     }, [childrenRef.current])
 

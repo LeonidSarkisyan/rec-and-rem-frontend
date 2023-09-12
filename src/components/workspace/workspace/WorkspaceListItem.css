@@ -1,0 +1,39 @@
+.workspace__card {
+    flex-shrink: 0;
+
+    border-radius: 4px;
+    border: 1px solid #7F6AFF;
+    background: #FFF;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 23px;
+    padding: 15px;
+
+    position: relative;
+}
+
+.workspace__card__title {
+    color: #7461EA;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.workspace__card__description {
+    color: #B1B1B1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+}
+
+.workspace__card__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

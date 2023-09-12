@@ -1,0 +1,36 @@
+.input__base__div {
+    margin-bottom: 25px;
+}
+
+.input__base__title {
+    font-size: 20px;
+    cursor: default;
+}
+
+.input__base {
+    height: 40px;
+    width: 100%;
+    color: #5d4aff;
+
+    font-size: 20px;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+
+.input__base:focus {
+    outline: none;
+}
+
+.input__base__counter {
+    color: #b2b2b2;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.input__base__container {
+    display: flex;
+    align-items: center;
+}

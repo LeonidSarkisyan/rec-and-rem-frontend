@@ -1,0 +1,42 @@
+.light-button {
+    border-radius: 3px;
+    border: 1px solid #7F6AFF;
+    background: #FFF;
+
+    color: #7F6AFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    padding: 8px 50px;
+    cursor: pointer;
+
+    transition: 0.2s;
+    user-select: none;
+    display: inline-block;
+}
+
+.light-button:hover {
+    border: 1px solid #FFF;
+    background: #7F6AFF;
+    color: #FFF;
+}
+
+.light-button__disabled {
+    background: #a292ff;
+    color: #e7e7e7;
+    border: #9b8cff 1px solid;
+}
+
+.light-button__disabled:hover {
+    background: #a292ff;
+    color: #e7e7e7;
+    border: #9b8cff 1px solid;
+    cursor: not-allowed;
+}
+
+.light-button__disabled {
+
+}

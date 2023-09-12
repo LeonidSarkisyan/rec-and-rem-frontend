@@ -1,0 +1,36 @@
+.modal__back {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__inner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: white;
+    border-radius: 4px;
+    width: 550px;
+}
+
+.modal__title {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+    margin-bottom: 15px;
+
+    font-size: 26px;
+    border-bottom: #5d4aff 1px solid;
+}
+
+.modal__content {
+    padding-left: 25px;
+    padding-right: 25px;
+}

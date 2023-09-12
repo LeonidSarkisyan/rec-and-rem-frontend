@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import AuthInput from "../UI/inputs/AuthInput";
 import EyePassword from "../UI/eye-password/EyePassword";
 
@@ -6,16 +6,25 @@ import EyePassword from "../UI/eye-password/EyePassword";
 interface AuthPasswordProps {
     password: string
     setPassword(password: string): void
-
-    isShowPassword: boolean
-    setIsShowPassword(value: boolean): void
 }
 
-const AuthPassword: FC<AuthPasswordProps> = ({password, setPassword, isShowPassword, setIsShowPassword}) => {
+const AuthPassword: FC<AuthPasswordProps> = ({password, setPassword}) => {
+
+    const [isShowPassword, setIsShowPassword] = useState<boolean>(false)
+    const [typeInput, setTypeInput] = useState<string>('password')
+
+    useEffect(() => {
+        if (isShowPassword) {
+            setTypeInput('text')
+        } else {
+            setTypeInput('password')
+        }
+    }, [isShowPassword])
+
     return (
         <div className={'password'}>
             <AuthInput
-                type={'password'}
+                type={typeInput}
                 placeholder={'Password'}
                 value={password}
                 setValue={setPassword}

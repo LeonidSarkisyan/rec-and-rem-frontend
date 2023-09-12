@@ -1,0 +1,39 @@
+.folder__card {
+    border-radius: 8px;
+    border: 0.5px solid #AAA;
+    background: #F8F8F8;
+    padding: 10px;
+
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folder__card:hover {
+    background: #eeeeee;
+}
+
+.folder__card_img {
+    width: 25px;
+    height: 25px;
+
+    display: block;
+    user-select: none;
+
+    margin-right: 10px;
+}
+
+.folder__card_text {
+    color: #242424;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    user-select: none;
+    margin-right: 100px;
+}
+
+.folder__card_text:hover {
+    font-weight: 700;
+}

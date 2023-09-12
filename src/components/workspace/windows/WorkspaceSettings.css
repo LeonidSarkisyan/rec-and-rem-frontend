@@ -1,0 +1,27 @@
+.workspace__form__opening {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.workspace__form__opening__title {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.workspace__form__opening__link {
+    padding: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    color: black;
+    border: 2px #5d4aff solid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workspace__form__opening__container {
+    margin-bottom: 25px;
+}

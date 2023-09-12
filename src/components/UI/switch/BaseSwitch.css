@@ -1,0 +1,27 @@
+.switch__back {
+    height: 30px;
+    width: 60px;
+    background: #9b8cff;
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.switch__back__active {
+    background: #7461ff;
+}
+
+.switch__button {
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    background: #826cff;
+
+    transition: 0.3s;
+    user-select: none;
+}
+
+.switch__button__active {
+    background: #5d4aff;
+}

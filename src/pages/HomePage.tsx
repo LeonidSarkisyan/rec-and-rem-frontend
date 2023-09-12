@@ -8,6 +8,8 @@ import Logo from "../components/Logo";
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
+
+
     return (
         <div>
             <h1>Домашняя</h1>

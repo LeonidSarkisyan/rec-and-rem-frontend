@@ -4,6 +4,8 @@ body {
     box-sizing: border-box;
     background: #e5e5e5;
 
+    overflow: hidden;
+
     font-family: 'Rubik', sans-serif;
 }
 

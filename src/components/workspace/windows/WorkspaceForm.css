@@ -1,0 +1,13 @@
+.workspace__form__inputs input {
+    display: block;
+}
+
+.workspace__form__inputs {
+    margin-bottom: 10px;
+}
+
+.workspace__form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

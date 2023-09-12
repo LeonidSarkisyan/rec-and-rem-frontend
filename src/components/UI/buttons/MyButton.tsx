@@ -7,9 +7,9 @@ interface MyButtonProps {
     onClick(): void
 }
 
-const MyButton: FC<MyButtonProps> = ({children, onClick}) => {
+const MyButton: FC<MyButtonProps> = ({children, onClick, ...props}) => {
     return (
-        <div className={'button'} onClick={onClick}>
+        <div className={'button'} onClick={onClick} {...props}>
             {children}
         </div>
     );

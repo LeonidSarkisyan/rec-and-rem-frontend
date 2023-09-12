@@ -4,7 +4,7 @@ import {useAdditionCSSClass} from "../../../hooks/useAdditionCSSClass";
 
 
 interface MyLoaderProps {
-    className?: string
+    className?: string,
 }
 
 

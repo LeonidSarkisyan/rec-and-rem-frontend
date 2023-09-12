@@ -3,6 +3,7 @@ import AuthInput from "../UI/inputs/AuthInput";
 import './AuthForm.css'
 import {AuthTitle} from "../../pages/AuthPage";
 import EyePassword from "../UI/eye-password/EyePassword";
+import AuthPassword from "./AuthPassword";
 
 
 interface AuthFormProps {
@@ -17,8 +18,6 @@ const AuthForm: FC<AuthFormProps> = (
     {typeAuth, password, username, setPassword, setUsername}
 ) => {
 
-    const [isShowPassword, setIsShowPassword] = useState<boolean>(false)
-
     useEffect(() => {
         setUsername('')
         setPassword('')
@@ -32,8 +31,7 @@ const AuthForm: FC<AuthFormProps> = (
                 value={username}
                 setValue={setUsername}
             />
-
-
+            <AuthPassword password={password} setPassword={setPassword}/>
         </div>
     );
 };

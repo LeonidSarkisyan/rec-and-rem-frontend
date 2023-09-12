@@ -1,0 +1,20 @@
+.workspace__list {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.workspace__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.workspace__not {
+    overflow-y: auto;
+    text-align: center;
+}
+
+.workspace__loader {
+    display: flex;
+    justify-content: center;
+}

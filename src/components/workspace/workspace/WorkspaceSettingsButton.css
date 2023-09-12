@@ -1,0 +1,19 @@
+.workspace__card__settings {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    cursor: pointer;
+}
+
+.workspace__card__settings_img {
+    width: 35px;
+    height: 35px;
+
+    transition: 0.3s;
+}
+
+.workspace__card__settings_img:hover {
+    transform: rotate(90deg);
+}
+
