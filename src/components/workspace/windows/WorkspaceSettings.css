@@ -14,14 +14,49 @@
     font-size: 26px;
     cursor: pointer;
     border-radius: 4px;
-    margin-bottom: 30px;
     color: black;
     border: 2px #5d4aff solid;
-    display: inline-flex;
+    margin-bottom: 35px;
+    display: block;
     align-items: center;
     justify-content: center;
+
+    transition: 0.3s;
+}
+
+.workspace__form__opening__link:hover {
+    background: #5d4aff;
+    color: white;
 }
 
 .workspace__form__opening__container {
-    margin-bottom: 25px;
+
+}
+
+.workspace__card__delete {
+    color: #da0000;
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.workspace__card__delete:hover {
+    padding-bottom: 0;
+    border-bottom: 2px solid #da0000;
+}
+
+.workspace__form__opening__code {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.workspace__form__opening__link__copy__message {
+    color: black;
+    margin-left: 6px;
+    margin-top: -35px;
 }

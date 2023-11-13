@@ -7,8 +7,17 @@ class WorkspaceService {
     private url = 'workspace/'
     private urlOpening = 'opening/'
 
-    public async get_all() {
+    public async get_all(querySearch?: string) {
         return await axios.get(BASE_URL_API + this.url, {
+            params: {
+                query_search: querySearch
+            },
+            withCredentials: true
+        })
+    }
+
+    public async get_by_id(workspaceId: number) {
+        return await axios.get(BASE_URL_API + this.url + workspaceId, {
             withCredentials: true
         })
     }
@@ -54,6 +63,22 @@ class WorkspaceService {
             newWorkspace.unique_url = responseOpen.data.unique_url
         }
         return newWorkspace
+    }
+
+    public async delete(workspaceId: number) {
+        const response = await axios.delete(BASE_URL_API + this.url + workspaceId, {
+            withCredentials: true
+        })
+        console.log(response)
+    }
+
+    public async upload(url: string) {
+        return  await axios.get(BASE_URL_API + this.url + this.urlOpening + url, {
+            params:  {
+                copy: true
+            },
+            withCredentials: true
+        })
     }
 }
 

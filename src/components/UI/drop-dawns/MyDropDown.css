@@ -1,5 +1,5 @@
 .container-dropdown {
     margin: 0;
     overflow: hidden;
-    transition: height 0.25s ease-in-out;
+    transition: margin-top 0.25s ease-in-out, height 0.25s ease-in-out;
 }

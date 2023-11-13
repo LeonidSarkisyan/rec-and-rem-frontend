@@ -11,6 +11,7 @@
 
 .folder__card:hover {
     background: #eeeeee;
+    font-weight: 700;
 }
 
 .folder__card_img {
@@ -26,14 +27,7 @@
 .folder__card_text {
     color: #242424;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1px;
     user-select: none;
     margin-right: 100px;
-}
-
-.folder__card_text:hover {
-    font-weight: 700;
 }

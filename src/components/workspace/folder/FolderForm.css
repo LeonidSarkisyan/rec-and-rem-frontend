@@ -1,0 +1,41 @@
+.folder__form {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.folder__form__input {
+    border: 0;
+    height: 53px;
+    font-size: 20px;
+    background: 0;
+    width: 100%;
+}
+
+.folder__form__input:focus {
+    outline: none;
+}
+
+.folder__form__add {
+    line-height: 20px;
+    font-size: 36px;
+    user-select: none;
+    cursor: pointer;
+    color: #7F6BFF;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.15s;
+    margin-top: -3px;
+}
+
+.folder__form__add:hover {
+    transform: scale(1.5);
+}
+
+.folder__form__loader {
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid #5d4aff;
+}

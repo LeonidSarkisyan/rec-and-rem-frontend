@@ -7,16 +7,19 @@ interface LightButtonProps {
     children: React.ReactNode,
     onClick(): void,
     isDisabled?: boolean
+    className?: string
 }
 
 
-const LightButton: FC<LightButtonProps> = ({children, onClick, isDisabled}) => {
+const LightButton: FC<LightButtonProps> = ({children, onClick, isDisabled, className}) => {
 
     if (isDisabled === undefined) {
         isDisabled = false
     }
 
-    const classes = useAdditionCSSClass('light-button', 'light-button__disabled', isDisabled)
+    let classes = useAdditionCSSClass('light-button', 'light-button__disabled', isDisabled)
+
+    classes = useAdditionCSSClass(classes, className)
 
     const clickHandler = () => {
         if (!isDisabled) {

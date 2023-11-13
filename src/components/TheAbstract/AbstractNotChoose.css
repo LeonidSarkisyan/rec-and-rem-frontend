@@ -1,0 +1,10 @@
+.abstract__not__choose {
+    padding: 6px 18px;
+    border-radius: 20px;
+
+    background: white;
+    color: #6751f5;
+    margin-top: -100px;
+
+    display: inline-block;
+}

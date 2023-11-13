@@ -1,0 +1,19 @@
+.list__text {
+    display: flex;
+    align-items: center;
+
+    padding-left: 24px;
+}
+
+.list__text__point {
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+
+    border-radius: 50%;
+    background: black;
+}
+
+.list__text__input {
+    flex-basis: 100%;
+}

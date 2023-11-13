@@ -1,0 +1,36 @@
+.additional__button {
+    padding: 10px 0 10px 10px;
+
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 3px 1px 3px 0 rgba(0, 0, 0, 0.25);
+
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+.additional__button:hover {
+    box-shadow: 1px 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.additional__button__image {
+    width: 25px;
+    height: 25px;
+
+    margin-right: 10px;
+}
+
+.additional__button__text {
+    color: #242424;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}

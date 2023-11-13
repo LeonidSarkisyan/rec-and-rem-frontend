@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FC, useRef, useState} from 'react';
+import React, {ChangeEvent, FC, useEffect, useRef, useState} from 'react';
 import './BaseInput.css'
 
 
@@ -9,18 +9,29 @@ interface BaseInputProps {
     type? : string
     className? : string
     maxCount: number
+    startFocus?: boolean
 }
 
 
 const BaseInput: FC<BaseInputProps> = (
-    {value, setValue, placeholder, type, className, maxCount}
+    {value, setValue, placeholder, type, className, maxCount, startFocus}
 ) => {
 
-    const [count, setCount] = useState<number>(value.length)
+    const [count, setCount] = useState<number>(0)
 
     const inputRef = useRef<HTMLInputElement>(null)
 
     const classes = className ? [className, 'input__base'] : ['input__base']
+
+    useEffect(() => {
+        if (inputRef.current && startFocus) {
+            inputRef.current.focus()
+        }
+    }, [])
+
+    useEffect(() => {
+        setCount(value.length)
+    }, [value])
 
     function onChangeHandler(event: ChangeEvent<HTMLInputElement>) {
         const length = event.target.value.length

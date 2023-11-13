@@ -1,0 +1,33 @@
+.workspace__avatar {
+    margin-right: 18px;
+    transition: 0.3s;
+
+    width: 135px;
+    height: 135px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workspace__avatar:hover {
+
+}
+
+.workspace__avatar__image {
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 4px;
+
+    width: 135px;
+    height: 135px;
+    cursor: pointer;
+
+    object-fit: cover;
+
+    transition: opacity 0.3s;
+}
+
+.workspace__avatar__image:hover {
+    opacity: 0.45;
+    box-shadow: 1px 1px 3px gray;
+}

@@ -1,16 +1,27 @@
-import React, {FC, useRef, useEffect, useState} from 'react';
+import React, {FC, useRef, useEffect, useState, SyntheticEvent} from 'react';
 import './MyDropDown.css'
+import {useAdditionCSSClass} from "../../../hooks/useAdditionCSSClass";
 
 
 interface MyDropDawnProps {
     children: React.ReactNode
-    isOpen: boolean
+    isOpen: boolean,
+    change?: number,
+    className?: string
+    classActiveAlways?: boolean
 }
 
-const MyDropDawn: FC<MyDropDawnProps> = ({children, isOpen}) => {
+const MyDropDawn: FC<MyDropDawnProps> = (
+    {children, isOpen, change, className, classActiveAlways}
+) => {
     const childrenRef = useRef<HTMLHeadingElement>(null)
     const [height, setHeight] = useState<number | undefined>(0)
     const [heightChildren, setHeightChildren] = useState<number | undefined>(0)
+    const [classesCSSStyles, setClassesCSSStyles] = useState<string>('container-dropdown')
+
+    let classes = useAdditionCSSClass(
+        'container-dropdown', className, classActiveAlways ? classActiveAlways : isOpen
+    )
 
     useEffect(() => {
         if (isOpen) {
@@ -19,16 +30,17 @@ const MyDropDawn: FC<MyDropDawnProps> = ({children, isOpen}) => {
     })
 
     useEffect(() => {
-        setHeightChildren(childrenRef.current?.scrollHeight)
-    }, [childrenRef.current])
+        setHeightChildren(childrenRef.current?.clientHeight)
+    })
 
     useEffect(() => {
         isOpen ? setHeight(heightChildren) : setHeight(0)
-    }, [isOpen])
+        setClassesCSSStyles(classes)
+    })
 
     return (
-        <div className={'container-dropdown'} style={{height: height}}>
-            <div className={'children'} ref={childrenRef}>
+        <div className={classesCSSStyles} style={{height: height}}>
+            <div ref={childrenRef}>
                 {children}
             </div>
         </div>

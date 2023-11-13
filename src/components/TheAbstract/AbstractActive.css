@@ -1,0 +1,12 @@
+.abstract__active {
+    width: 1400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+}

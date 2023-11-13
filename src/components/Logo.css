@@ -1,11 +1,27 @@
 .logo-container {
     margin-top: 24px;
     margin-left: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 22px;
+    margin-bottom: -2px;
+    user-select: none;
+}
 
+.logo-title {
+    color: #242424;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    user-select: none;
     cursor: pointer;
 }

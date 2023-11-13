@@ -3,7 +3,7 @@ import './BaseModal.css'
 import {Dispatch, SetStateAction} from "react";
 
 
-interface BaseModalProps {
+export interface BaseModalProps {
     show: boolean,
     setShow: Dispatch<SetStateAction<boolean>>,
     children: React.ReactNode,

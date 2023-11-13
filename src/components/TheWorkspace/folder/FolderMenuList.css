@@ -1,0 +1,16 @@
+.folder__menu__list {
+    height: 645px;
+    overflow-y: auto;
+}
+
+.folder__menu__list::-webkit-scrollbar {
+    width: 2px;
+
+    background: #e8e8e8;
+}
+
+.folder__menu__list::-webkit-scrollbar-thumb {
+    width: 2px;
+
+    background: #644df8;
+}

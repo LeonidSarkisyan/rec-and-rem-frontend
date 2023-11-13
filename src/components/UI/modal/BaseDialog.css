@@ -1,0 +1,54 @@
+.base__dialog__buttons {
+    padding-left: 25px;
+    padding-right: 10px;
+    padding-top: 15px;
+
+    margin-top: 15px;
+
+    font-size: 26px;
+    border-top: #5d4aff 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.modal__title {
+    line-height: 54px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.modal__inner {
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.base__dialog__button {
+    padding: 0 12px;
+    line-height: 46px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: #e50000;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.base__dialog__button:hover {
+    background: #c20101;
+}
+
+.base__dialog__button__cancel {
+    background: none;
+    color: gray;
+}
+
+.base__dialog__button__cancel:hover {
+    background: gray;
+    color: white;
+}

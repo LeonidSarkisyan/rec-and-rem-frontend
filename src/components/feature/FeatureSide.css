@@ -1,0 +1,8 @@
+.feature__side {
+    padding: 1% 3% 0 3%;
+
+    border-top: 1px #D4D4D4 solid;
+    border-right: 1px #D4D4D4 solid;
+
+    width: 40%;
+}

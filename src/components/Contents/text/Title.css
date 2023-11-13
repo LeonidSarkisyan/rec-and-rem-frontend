@@ -1,0 +1,37 @@
+.input__base__content {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0);
+}
+
+.input__base__content:focus {
+    outline: none;
+}
+
+.title__input {
+    color: #242424;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 100%;
+
+    outline: none;
+
+    margin-bottom: 32px;
+}
+
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+
+    color: #939393;
+}
+
+.title__input:focus {
+    outline: none;
+}
+
+

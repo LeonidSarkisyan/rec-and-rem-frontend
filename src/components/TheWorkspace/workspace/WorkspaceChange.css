@@ -1,0 +1,72 @@
+.workspace__change {
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #F8F8F8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 325px;
+
+    position: absolute;
+    top: 27px;
+    left: 100px;
+}
+
+.workspace__change__opened {
+    border-radius: 8px 8px 0 0;
+}
+
+.workspace__change__title {
+    color: #242424;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.workspace__change__image {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    width: 14px;
+    height: 14px;
+    transition: 0.15s;
+}
+
+.workspace__change__image:hover {
+    background: #bbbbbb;
+}
+
+.workspace__change__image__active {
+    transform: scale(1.5) rotate(180deg);
+}
+
+.workspace__change__list {
+    border-top: 2px solid #b7b7b7;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding: 12px 22px;
+    border-radius: 0 0 8px 8px;
+    background: #F8F8F8;
+    width: 325px;
+}
+
+.workspace__change__list__item {
+    padding: 6px 0;
+    border-radius: 6px;
+
+    font-size: 20px;
+
+    transition: 0.15s;
+}
+
+.workspace__change__list__item:hover {
+
+}

@@ -1,0 +1,50 @@
+.folder {
+    position: relative;
+}
+
+.folder__item {
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+    padding: 10px 10px;
+
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.folder__item:first-child {
+    margin-top: 0;
+}
+
+.folder__item__title {
+    cursor: text;
+}
+
+.folder__item__settings {
+    width: 35px;
+    height: 35px;
+
+    margin-top: -2px;
+    display: block;
+    margin-left: auto;
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.folder__item__settings:hover {
+    transform: rotate(90deg);
+}
+
+.folder__type__access {
+    position: absolute;
+    right: 60px;
+    top: 17px;
+    border-radius: 16px;
+    border: 1px #565656 solid;
+    padding: 0 7px;
+    font-size: 14px;
+    color: #565656;
+    font-weight: 500;
+}

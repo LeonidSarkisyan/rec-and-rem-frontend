@@ -9,9 +9,10 @@ interface WorkspaceListProps {
     workspaces: Workspace[],
     isLoading: boolean,
     error: string,
+    deleteWorkspace(workspaceId: number): void
 }
 
-const WorkspaceList: FC<WorkspaceListProps> = ({workspaces, isLoading, error}) => {
+const WorkspaceList: FC<WorkspaceListProps> = ({workspaces, isLoading, error, deleteWorkspace}) => {
 
     const [height, setHeight] = useState<number>(0)
 
@@ -36,7 +37,10 @@ const WorkspaceList: FC<WorkspaceListProps> = ({workspaces, isLoading, error}) =
                         ?
                         <div ref={listRef} style={{height: height}} className="workspace__list">
                             {workspaces.map(workspace =>
-                                <WorkspaceListItem key={workspace.id} workspace={workspace}/>
+                                <WorkspaceListItem
+                                    deleteWorkspace={deleteWorkspace}
+                                    key={workspace.id} workspace={workspace}
+                                />
                             )}
                         </div>
                         :

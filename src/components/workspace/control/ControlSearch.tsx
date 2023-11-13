@@ -1,19 +1,33 @@
 import React, {ChangeEvent, FC, useState} from 'react';
 import './ControlSearch.css'
+import useDebounds from "../../../hooks/useDebounds";
 
-const ControlSearch: FC = () => {
+
+interface ControlSearchProps {
+    fetch(querySearch: string): void
+}
+
+
+const ControlSearch: FC<ControlSearchProps> = ({fetch}) => {
 
     const clearSearch = require('../../../assets/images/workspace/clear.png')
 
     const [query, setQuery] = useState<string>("")
 
+    const debouncedSearch = useDebounds(search, 500)
+
+    async function search(value: string) {
+        await fetch(value)
+    }
+
     function onChangeHandler(event: ChangeEvent<HTMLInputElement>) {
         setQuery(event.target.value)
-        console.log(event.target.value)
+        debouncedSearch(event.target.value)
     }
 
     function clearSearchQuery() {
         setQuery("")
+        debouncedSearch("")
     }
 
     return (

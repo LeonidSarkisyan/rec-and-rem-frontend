@@ -1,6 +1,7 @@
 import AuthPage from "../pages/AuthPage";
 import HomePage from "../pages/HomePage";
 import AllWorkspacesPage from "../pages/AllWorkspacesPage";
+import WorkspacePage from "../pages/WorkspacePage";
 
 
 export const routes = [
@@ -15,5 +16,9 @@ export const routes = [
     {
         path: "/workspaces",
         component: AllWorkspacesPage
+    },
+    {
+        path: "/workspaces/:id",
+        component: WorkspacePage
     }
 ]

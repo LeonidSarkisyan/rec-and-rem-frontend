@@ -1,0 +1,31 @@
+.folder__list {
+    max-height: 420px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.folder__list::-webkit-scrollbar {
+    height: 80%;
+    width: 2px;
+    background: #a8a8a8;
+    border-radius: 20px;
+}
+
+.folder__list::-webkit-scrollbar-thumb {
+    width: 2px;
+    background: #6456ff;
+    border-radius: 20px;
+}
+
+.folder__card__not {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.folder__card__loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -37,3 +37,26 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.workspace__card__buttons__go {
+    position: absolute;
+    bottom: 19px;
+    right: 15px;
+}
+
+.workspace__type__access {
+    position: absolute;
+    right: 60px;
+    top: 24px;
+    border-radius: 16px;
+    border: 1px #565656 solid;
+    padding: 0 7px;
+    font-size: 14px;
+    color: #565656;
+    font-weight: 500;
+}
+
+.workspace__card__inner {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+.abstract__form {
+    text-align: center;
+    padding: 6px 0 12px 0;
+}
+
+.abstract__form__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    padding: 0 3px;
+
+    color: #6751f5;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.abstract__form__title:hover {
+    text-decoration: underline 1px solid #6751f5;
+}
+
+.abstract__form__titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px 0;
+}

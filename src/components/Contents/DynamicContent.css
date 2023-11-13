@@ -1,0 +1,10 @@
+.dynamic__content {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.dynamic__content__component {
+    width: 900px;
+}

@@ -1,0 +1,17 @@
+.content__control {
+    position: absolute;
+    top: 26px;
+    left: -30px;
+
+    cursor: pointer;
+}
+
+.content__control__plus {
+    color: #8b77ff;
+
+    transition: 0.15s;
+}
+
+.content__control__plus:hover {
+    color: #5d4aff;
+}
